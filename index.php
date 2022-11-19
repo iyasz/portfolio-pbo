@@ -60,7 +60,7 @@
         }
     }
 
-    .btn .fw-600 {
+    .fw-600 {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
@@ -145,6 +145,19 @@
 
     }
 
+    /* end profil  */
+
+    /* project  */
+
+    #projects {
+        background-color: #f1faee;
+        width: 100%;
+        height: y;
+    }
+
+    y
+    /* end project  */
+
 
     .reveal {
         position: relative;
@@ -188,6 +201,8 @@
         </div>
     </nav>
 
+    <!-- mobile view  -->
+
     <nav class="navbar navbar-dark bg-dark d-lg-none d-md-none d-block">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
@@ -230,46 +245,57 @@
         </div>
     </nav>
 
-    <div class="container mt-5 ">
-        <div class="row">
-            <div class="col-7">
-                <p class="title-say fw-300 "><img src="https://static.wixstatic.com/media/269653_f8294923a5304079bed95d039fa9a193~mv2.gif" alt="bandar" width="60px" class="rounded-circle "> <span class=""> , I'm</span></p>
+    <section id="home">
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-7">
+                    <p class="title-say fw-300 "><img src="https://static.wixstatic.com/media/269653_f8294923a5304079bed95d039fa9a193~mv2.gif" alt="bandar" width="60px" class="rounded-circle "> <span class=""> , I'm</span></p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="">
-                    <h1 class="title-name fw-600"><span class="bg-first"> Muhammad</span> <span class="bg-last">Ilyasa</span></h1>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="">
+                        <h1 class="title-name fw-600"><span class="bg-first"> Muhammad</span> <span class="bg-last">Ilyasa</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-10">
+                    <div class="title-profile">
+                        <p class="fw-200 fs-5">
+                            I am a student from Bina mandiri multimedia High School. I like design elements and challenging logic. I also like to join free bootcamps to improve my soft skills and I'm currently learning about Laravel. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-9">
+                    <div class="">
+                        <a href="" class="btn btn-info btn-profile px-5 py-2 fw-300">Github</a>
+                        <a href="" class="btn btn-info btn-profile px-5 py-2 ms-1 fw-300">Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 d-none d-lg-block d-md-block">
+                <div class="col-lg-12">
+                    <div class="animate">
+                        <img class="img-animate" width="70px" src="https://ryanharveyauthor.files.wordpress.com/2018/09/clydeeghost.png" alt="">
+                        <img class="img-animate2" width="77px" src="https://www.pngmart.com/files/2/Pac-Man-Ghost-PNG-Image.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-10">
-                <div class="title-profile">
-                    <p class="fw-200 fs-5">
-                        I am a student from Bina mandiri multimedia High School. I like design elements and challenging logic. I also like to join free bootcamps to improve my soft skills and I'm currently learning about Laravel. </p>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-3">
-            <div class="col-lg-9">
-                <div class="">
-                    <a href="" class="btn btn-info btn-profile px-5 py-2 fw-300">Github</a>
-                    <a href="" class="btn btn-info btn-profile px-5 py-2 ms-1 fw-300">Resume</a>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5 d-none d-lg-block d-md-block">
-            <div class="col-lg-12">
-                <div class="animate">
-                    <img class="img-animate" width="70px" src="https://ryanharveyauthor.files.wordpress.com/2018/09/clydeeghost.png" alt="">
-                    <img class="img-animate2" width="77px" src="https://www.pngmart.com/files/2/Pac-Man-Ghost-PNG-Image.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- mobile view  -->
+    <section id="projects mt-5">
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h2 class="fw-600">My Projects</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="main.js"></script>
