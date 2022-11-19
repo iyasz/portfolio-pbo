@@ -12,7 +12,55 @@
 </head>
 
 <style>
-    .fw-600 {
+    body {
+        height: 1700px;
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .title-name {
+            font-size: 44px !important;
+        }
+
+        .title-say {
+            font-size: 35px !important;
+        }
+
+        .title-say img {
+            width: 45px;
+        }
+
+        .title-profile p {
+            font-size: 18px !important;
+        }
+
+        .title-say span {
+            top: 8px !important;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 575px) {
+        .title-name {
+            font-size: 33px !important;
+        }
+
+        .title-say {
+            font-size: 34px !important;
+        }
+
+        .title-say img {
+            width: 65px !important;
+        }
+
+        .title-say span {
+            top: 13px !important;
+        }
+
+        .title-profile p {
+            font-size: 15.5px !important;
+        }
+    }
+
+    .btn .fw-600 {
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
@@ -22,8 +70,18 @@
         font-weight: 300;
     }
 
+    .fw-200 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+    }
+
     .title-say {
         font-size: 45px;
+    }
+
+    .title-say span {
+        position: relative;
+        top: 7px;
     }
 
     .title-name {
@@ -37,6 +95,67 @@
 
     .bg-last {
         background-color: #96E5CC;
+    }
+
+    .btn-profile {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #707d9d;
+    }
+
+    .btn-profile:hover {
+        background: transparent !important;
+        border: 1px solid #707d9d;
+        box-shadow: 5px 5px 0 #707d9d;
+    }
+
+    .btn-profile:focus {
+        border: 1px solid #707d9d !important;
+    }
+
+    /* .animate {
+        animation-name: ghost;
+    } */
+
+    .animate .img-animate {
+        position: relative;
+        animation: ghost 13s infinite;
+    }
+
+    .animate .img-animate2 {
+        position: relative;
+        animation: ghost 15s infinite;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes ghost {
+        0% {
+            left: 0%;
+        }
+
+        50% {
+            left: 90%;
+            --webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        100% {
+            left: 0%;
+        }
+
+    }
+
+
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 5%;
+        transition: all 1.4s ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0px);
+        opacity: 100%;
     }
 </style>
 
@@ -111,10 +230,10 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 ">
         <div class="row">
             <div class="col-7">
-                <p class="title-say fw-300 "><img src="https://static.wixstatic.com/media/269653_f8294923a5304079bed95d039fa9a193~mv2.gif" alt="bandar" width="60px" class="rounded-circle"> , I'm</p>
+                <p class="title-say fw-300 "><img src="https://static.wixstatic.com/media/269653_f8294923a5304079bed95d039fa9a193~mv2.gif" alt="bandar" width="60px" class="rounded-circle "> <span class=""> , I'm</span></p>
             </div>
         </div>
         <div class="row">
@@ -122,9 +241,30 @@
                 <div class="">
                     <h1 class="title-name fw-600"><span class="bg-first"> Muhammad</span> <span class="bg-last">Ilyasa</span></h1>
                 </div>
-                <!-- <div class="">
-                    <h1>Ilyasa</h1>
-                </div> -->
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-10">
+                <div class="title-profile">
+                    <p class="fw-200 fs-5">
+                        I am a student from Bina mandiri multimedia High School. I like design elements and challenging logic. I also like to join free bootcamps to improve my soft skills and I'm currently learning about Laravel. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-9">
+                <div class="">
+                    <a href="" class="btn btn-info btn-profile px-5 py-2 fw-300">Github</a>
+                    <a href="" class="btn btn-info btn-profile px-5 py-2 ms-1 fw-300">Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 d-none d-lg-block d-md-block">
+            <div class="col-lg-12">
+                <div class="animate">
+                    <img class="img-animate" width="70px" src="https://ryanharveyauthor.files.wordpress.com/2018/09/clydeeghost.png" alt="">
+                    <img class="img-animate2" width="77px" src="https://www.pngmart.com/files/2/Pac-Man-Ghost-PNG-Image.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -132,6 +272,9 @@
     <!-- mobile view  -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
 </body>
 
 </html>
