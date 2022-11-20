@@ -156,12 +156,6 @@
         width: 100%;
     }
 
-    .overflow-projects {
-        background-color: #eaeaea;
-        height: 230px;
-        overflow-x: auto;
-    }
-
     .all-title {
         color: #1E3B6C;
     }
@@ -192,8 +186,52 @@
         color: #03b0fd;
     }
 
+    .project {
+        overflow: hidden;
+        position: relative;
+    }
+
     .project .img-project {
         object-fit: cover;
+    }
+
+    /* .project:hover+.project .content {
+        display: flex;
+        transition: 1s;
+    } */
+
+    /* .project .img-project a:hover+.bookmark,
+    .plus {
+        opacity: 100% !important;
+        transition: 2s;
+    } */
+
+    .project .content {
+        display: flex;
+        justify-content: center;
+        position: absolute !important;
+        bottom: -10px !important;
+        transition: all .3s ease-in-out;
+    }
+
+    .content .bookmark,
+    .plus {
+        background: #03b0fd;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        opacity: 35% !important;
+        color: white;
+        transition: 0.5s;
+
+    }
+
+    .bookmark:hover,
+    .plus:hover {
+        opacity: 100% !important;
+        transition: 0.5s;
+        color: white;
     }
 
     /* end project  */
@@ -201,8 +239,8 @@
 
     .reveal {
         position: relative;
-        transform: translateY(150px);
-        opacity: 5%;
+        transform: translateY(100px);
+        opacity: 0%;
         transition: all 1s ease;
     }
 
@@ -328,7 +366,7 @@
     <br>
     <br>
 
-    <section class="projects reveal" id="projects mt-5">
+    <section class="projects " id="projects mt-5">
         <div class="container  mt-5">
             <div class="row ">
                 <div class="col-12 ">
@@ -338,7 +376,7 @@
             <div class="mt-3">
                 <p class="fw-200 "> These are some of the projects I've made from the start of programming until now.</p>
             </div>
-            <div class="row mt-4 justify-content-center">
+            <div class="row mt-4 justify-content-center ">
                 <div class="col-lg-12 justify-content-center">
                     <ul class="nav nav-pills mb-3 mx-auto rounded-pill fw-300" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -354,17 +392,17 @@
                             <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Dekstop</button>
                         </li>
                     </ul>
-                    <div class="tab-content mt-4 pb-5" id="pills-tabContent">
+                    <div class="tab-content mt-4 pb-5 reveal" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <div class="row justify-content-center gallery">
                                 <div class="col-lg-4 col-md-6 col-12 gy-4">
-                                    <div class="project ">
+                                    <div class="project position-relative ">
                                         <a href="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png">
                                             <img src="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png" class="img-project w-100" alt="">
                                         </a>
-                                        <div class="content">
-                                            <a href=""></a>
-                                            <a href=""></a>
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="plus" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
