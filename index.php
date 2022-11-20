@@ -189,10 +189,16 @@
     .project {
         overflow: hidden;
         position: relative;
+        transition: 0.3s;
     }
 
     .project .img-project {
         object-fit: cover;
+    }
+
+    .project:hover .content {
+        bottom: 0 !important;
+        opacity: 100%;
     }
 
     /* .project:hover+.project .content {
@@ -210,8 +216,8 @@
         display: flex;
         justify-content: center;
         position: absolute !important;
-        bottom: -10px !important;
-        transition: all .3s ease-in-out;
+        bottom: -30px !important;
+        transition: all ease-in-out 0.3s;
     }
 
     .content .bookmark,
