@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.css">
 </head>
 
 <style>
@@ -134,7 +136,7 @@
         }
 
         50% {
-            left: 90%;
+            left: 96%;
             --webkit-transform: scaleX(-1);
             transform: scaleX(-1);
         }
@@ -149,13 +151,51 @@
 
     /* project  */
 
-    #projects {
-        background-color: #f1faee;
+    .projects {
+        background-color: #F5F8FD;
         width: 100%;
-        height: y;
     }
 
-    y
+    .overflow-projects {
+        background-color: #eaeaea;
+        height: 230px;
+        overflow-x: auto;
+    }
+
+    .all-title {
+        color: #1E3B6C;
+    }
+
+    .all-title::before {
+        content: '';
+        position: absolute;
+        background-color: #707d9d;
+        width: 70px;
+        height: 3px;
+        bottom: -13px;
+    }
+
+    .nav.nav-pills {
+        width: max-content;
+        display: flex;
+        background: white;
+        font-size: 12px;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-pills .nav-item .nav-link {
+        color: black;
+    }
+
+    .nav-pills .nav-link.active {
+        background: none;
+        color: #03b0fd;
+    }
+
+    .project .img-project {
+        object-fit: cover;
+    }
+
     /* end project  */
 
 
@@ -163,7 +203,7 @@
         position: relative;
         transform: translateY(150px);
         opacity: 5%;
-        transition: all 1.4s ease;
+        transition: all 1s ease;
     }
 
     .reveal.active {
@@ -270,7 +310,7 @@
             <div class="row mt-3">
                 <div class="col-lg-9">
                     <div class="">
-                        <a href="" class="btn btn-info btn-profile px-5 py-2 fw-300">Github</a>
+                        <a href="https://github.com/iyasz" class="btn btn-info btn-profile px-5 py-2 fw-300">Github</a>
                         <a href="" class="btn btn-info btn-profile px-5 py-2 ms-1 fw-300">Resume</a>
                     </div>
                 </div>
@@ -279,25 +319,81 @@
                 <div class="col-lg-12">
                     <div class="animate">
                         <img class="img-animate" width="70px" src="https://ryanharveyauthor.files.wordpress.com/2018/09/clydeeghost.png" alt="">
-                        <img class="img-animate2" width="77px" src="https://www.pngmart.com/files/2/Pac-Man-Ghost-PNG-Image.png" alt="">
+                        <img class="img-animate2" width="70px" src="https://www.pngmart.com/files/2/Pac-Man-Ghost-PNG-Image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section class="projects reveal" id="projects mt-5">
+        <div class="container  mt-5">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">My Projects</h2>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p class="fw-200 "> These are some of the projects I've made from the start of programming until now.</p>
+            </div>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-lg-12 justify-content-center">
+                    <ul class="nav nav-pills mb-3 mx-auto rounded-pill fw-300" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Web</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Dekstop</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-4 pb-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row justify-content-center gallery">
+                                <div class="col-lg-4 col-md-6 col-12 gy-4">
+                                    <div class="project ">
+                                        <a href="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png">
+                                            <img src="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png" class="img-project w-100" alt="">
+                                        </a>
+                                        <div class="content">
+                                            <a href=""></a>
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4">
+                                    <div class="project ">
+                                        <a href="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png">
+                                            <img src="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png" class="img-project w-100" alt="">
+                                        </a>
+                                        <div class="content">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">web</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">design</div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">dekstop</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects mt-5">
-        <div class="container mt-5">
-            <div class="row ">
-                <div class="col-12 ">
-                    <h2 class="fw-600">My Projects</h2>
-                </div>
-            </div>
-        </div>
-    </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
     <script src="main.js"></script>
 
 
