@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Portfolio - iyasz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css">
 </head>
 
 <style>
@@ -156,6 +156,23 @@
         width: 100%;
     }
 
+    .project:hover::before {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    .project::before {
+        content: '';
+        position: absolute;
+        background: rgba(255, 255, 255, 0.4);
+        z-index: 2;
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+    }
+
     .all-title {
         color: #1E3B6C;
     }
@@ -173,7 +190,7 @@
         width: max-content;
         display: flex;
         background: white;
-        font-size: 12px;
+        font-size: 13px;
         box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.04);
     }
 
@@ -218,6 +235,7 @@
         position: absolute !important;
         bottom: -30px !important;
         transition: all ease-in-out 0.3s;
+        z-index: 3;
     }
 
     .content .bookmark,
@@ -227,7 +245,7 @@
         display: flex;
         justify-content: center;
         font-size: 20px;
-        opacity: 35% !important;
+        opacity: 50% !important;
         color: white;
         transition: 0.5s;
 
@@ -241,6 +259,113 @@
     }
 
     /* end project  */
+
+    /* game  */
+
+
+    .judul {
+        margin-top: 100px;
+        width: 70%;
+    }
+
+    #point {
+        font-size: 5rem;
+        color: #1E3B6C;
+    }
+
+    .kana {
+        width: 400px;
+        -webkit-user-select: none;
+        box-shadow: 8px 8px 0 #264653;
+    }
+
+    .content-game .btn-game {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .move {
+        /* animation: shake .5s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px; */
+    }
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-10px, 10px, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(20px, 5px, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-14px, -10px, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(14px, -5px, 0);
+        }
+    }
+
+
+
+
+    @media screen and (max-width: 480px) {
+        .kana {
+            width: 300px;
+            height: 300px;
+        }
+
+        #point {
+            font-size: 50px;
+        }
+    }
+
+    /* end game  */
+
+    /* about  */
+
+    /* .shadow-inner {
+        box-shadow: inset 3px 3px 0px rgba(0, 0, 0, 0.9);
+        width: 200px;
+        background: transparent;
+        background-image: url("https://i.ibb.co/CvmTTWC/aj.jpg");
+        background-size: cover;
+    } */
+
+
+    .img-about {
+        border: 7px solid white;
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .img-about::after {
+        content: '';
+        position: absolute;
+        border: 5px solid red;
+        width: 100%;
+        background-color: red;
+        z-index: 9994;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        right: 12px;
+    }
+
+    /* end about  */
 
 
     .reveal {
@@ -275,7 +400,7 @@
                         <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="">About</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="">Contact</a>
@@ -372,7 +497,7 @@
     <br>
     <br>
 
-    <section class="projects " id="projects mt-5">
+    <section class="projects mt-5" id="projects">
         <div class="container  mt-5">
             <div class="row ">
                 <div class="col-12 ">
@@ -401,24 +526,48 @@
                     <div class="tab-content mt-4 pb-5 reveal" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <div class="row justify-content-center gallery">
-                                <div class="col-lg-4 col-md-6 col-12 gy-4">
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
                                     <div class="project position-relative ">
-                                        <a href="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png">
-                                            <img src="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png" class="img-project w-100" alt="">
-                                        </a>
+                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
                                         <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="plus" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
                                             <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-12 gy-4">
-                                    <div class="project ">
-                                        <a href="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png">
-                                            <img src="https://kickflip.digital/wp-content/uploads/2018/12/perpetto-redesign.png" class="img-project w-100" alt="">
-                                        </a>
-                                        <div class="content">
-                                            <a href=""></a>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -428,6 +577,48 @@
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">design</div>
                         <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">dekstop</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">Playing Game</h2>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center reveal mt-3">
+                <div class="col-lg-12 position-relative">
+                    <div class="content-game ">
+                        <h5 class="">Click Or Touch</h5>
+                        <!-- <img src="img/popcat.svg" class="judul" alt="" /> -->
+                        <h1 id="point">0</h1>
+                        <h5 id="info-game"></h5>
+                        <img src="https://i.ibb.co/zr547QB/New-Project-39-059-A32-A.png" class="kana mt-4" />
+                        <div class="btn-game"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects mt-5" id="about">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">About Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-5 col-md-6 col-8">
+                    <div class="">
+                        <img src="https://i.ibb.co/CvmTTWC/aj.jpg" class="rounded-circle mt-2 img-about" width="300px" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h1>tes</h1>
                 </div>
             </div>
         </div>
