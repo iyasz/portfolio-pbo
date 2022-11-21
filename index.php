@@ -624,6 +624,20 @@
         </div>
     </section>
 
+    <section class="mt-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">Contact</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script>
 
