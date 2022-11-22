@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <style>
@@ -367,6 +371,54 @@
 
     /* end about  */
 
+    /* contact  */
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .contact-card {
+        background-color: #F5F8FD;
+        width: 100%;
+        height: 100%;
+        border-radius: 9px;
+    }
+
+    .contact-card p {
+        font-size: 14px;
+        letter-spacing: 0.6px;
+    }
+
+    /* end contact  */
+
 
     .reveal {
         position: relative;
@@ -631,15 +683,73 @@
                     <h2 class="fw-600 my-3 all-title position-relative rounded-4">Contact</h2>
                 </div>
             </div>
+            <div class="  swiper mySwiper mt-5 ">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <div class="contact-card">
+                            <h1><i class="bi bi-github"></i></h1>
+                            <div class="">
+                                <h3>GitHub</h3>
+                                <p class="opacity-75 fw-300">@iyasz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="contact-card">
+                            <h1><i class="bi bi-facebook"></i></h1>
+                            <div class="">
+                                <h3>Facebook</h3>
+                                <p class="opacity-75 fw-300">@Mhmmd Ilyasa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="contact-card">
+                            <h1><i class="bi bi-linkedin"></i></h1>
+                            <div class="">
+                                <h3>LinkedIn</h3>
+                                <p class="opacity-75 fw-300">@yaszavellia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="contact-card">
+                            <h1><i class="bi bi-instagram"></i></h1>
+                            <div class="">
+                                <h3>Instagram</h3>
+                                <p class="opacity-75 fw-300">@yaszavellia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="contact-card">
+                            <h1><i class="bi bi-telegram"></i></h1>
+                            <div class="">
+                                <h3>Telegram</h3>
+                                <p class="opacity-75 fw-300">@yaszavellia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-lg-end text-md-end text-center">
+                    <a class="text-dark mx-3" href="https://github.com/iyasz"><i class="bi bi-github"></i></a>
+                    <p class="d-inline fw-300 opacity-75">GitHub</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
