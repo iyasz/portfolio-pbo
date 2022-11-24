@@ -383,6 +383,22 @@
         right: 12px;
     }
 
+    .title-about {
+        font-size: 44px;
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .title-about {
+            font-size: 30px !important;
+        }
+    }
+
+    @media (min-width: 0px) and (max-width: 575px) {
+        .title-about {
+            font-size: 32px !important;
+        }
+    }
+
     /* end about  */
 
     /* contact  */
@@ -438,7 +454,7 @@
         position: relative;
         transform: translateY(100px);
         opacity: 0%;
-        transition: all 1s ease;
+        transition: all 0.8s ease;
     }
 
     .reveal.active {
@@ -463,13 +479,13 @@
                         <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -671,20 +687,21 @@
     </section>
 
     <section class="projects mt-5" id="about">
-        <div class="container mt-5">
+        <div class="container mt-5 ">
             <div class="row">
                 <div class="col-12 ">
                     <h2 class="fw-600 my-3 all-title position-relative rounded-4">About Me</h2>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-                <div class="col-lg-5 col-md-6 col-8">
+            <div class="row justify-content-center mt-4 reveal pb-4">
+                <div class="col-lg-4 col-md-6 col-8">
                     <div class="">
                         <img src="https://i.ibb.co/CvmTTWC/aj.jpg" class="rounded-circle mt-2 img-about" width="300px" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <h1>tes</h1>
+                <div class="col-lg-8 mt-4 mt-lg-0 mt-md-3 overflow-hidden">
+                    <p class="mb-0 fw-300">Hi everyone!</p>
+                    <h1 class="title-about fw-600">Muhammad Ilyasa :3 </h1>
                 </div>
             </div>
         </div>
@@ -760,6 +777,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script>
 

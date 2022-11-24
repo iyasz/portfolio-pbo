@@ -1,4 +1,23 @@
+//scroll navbar
+
+$(".nav-link").on("click", function (e) {
+  e.preventDefault();
+
+  var linkHref = $(this).attr("href");
+  $("html, body").animate(
+    {
+      scrollTop: $(linkHref).offset().top - 0,
+    },
+    0
+  );
+  return false;
+});
+
+// lightbox
+
 var lightbox = new SimpleLightbox(".gallery a");
+
+// scroll top opacity
 
 window.addEventListener("scroll", reveal);
 
