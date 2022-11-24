@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
@@ -71,6 +71,16 @@
         font-weight: 600;
     }
 
+    .fw-500 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    .fw-400 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
     .fw-300 {
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
@@ -79,6 +89,10 @@
     .fw-200 {
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
+    }
+
+    .navbar-dekstop .nav-link {
+        font-size: 15px;
     }
 
     .title-say {
@@ -444,9 +458,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav navbar-dekstop mx-auto fw-400">
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#">Projects</a>
@@ -683,7 +697,7 @@
                     <h2 class="fw-600 my-3 all-title position-relative rounded-4">Contact</h2>
                 </div>
             </div>
-            <div class="  swiper mySwiper mt-5 ">
+            <div class="swiper mySwiper mt-5 ">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide">
                         <div class="contact-card">
@@ -699,7 +713,7 @@
                             <h1><i class="bi bi-facebook"></i></h1>
                             <div class="">
                                 <h3>Facebook</h3>
-                                <p class="opacity-75 fw-300">@Mhmmd Ilyasa</p>
+                                <p class="opacity-75 fw-300">@Mhmmad ILyasa</p>
                             </div>
                         </div>
                     </div>
@@ -726,7 +740,7 @@
                             <h1><i class="bi bi-telegram"></i></h1>
                             <div class="">
                                 <h3>Telegram</h3>
-                                <p class="opacity-75 fw-300">@yaszavellia</p>
+                                <p class="opacity-75 fw-300">@Yaszavellia</p>
                             </div>
                         </div>
                     </div>
