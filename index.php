@@ -12,9 +12,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.css"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/vendor/lightbox/dist/simple-lightbox.min.css">
 </head>
 
 <style>
@@ -228,6 +230,8 @@
     }
 
     .project .img-project {
+        width: 100%;
+        height: 180px;
         object-fit: cover;
     }
 
@@ -610,45 +614,45 @@
                             <div class="row justify-content-center gallery">
                                 <div class="col-lg-4 col-md-6 col-12 gy-4 ">
                                     <div class="project position-relative ">
-                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <img src="https://i.ibb.co/pbfgkGw/web2.png" class="img-project w-100" alt="">
                                         <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="https://i.ibb.co/pbfgkGw/web2.png" class="plus"><i class="bi bi-plus-lg"></i></a>
                                             <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12 gy-4 ">
                                     <div class="project position-relative ">
-                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <img src="https://i.ibb.co/W0yg5kF/web4.png" class="img-project w-100" alt="">
                                         <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="https://i.ibb.co/W0yg5kF/web4.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a download="https://i.ibb.co/W0yg5kF/web4.png" href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/vL5QRpn/web5.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/vL5QRpn/web5.png" class="plus"><i class="bi bi-plus-lg"></i></a>
                                             <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12 gy-4 ">
                                     <div class="project position-relative ">
-                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <img src="https://i.ibb.co/xCPk22P/web6.png" class="img-project w-100" alt="">
                                         <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="https://i.ibb.co/xCPk22P/web6.png" class="plus"><i class="bi bi-plus-lg"></i></a>
                                             <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-12 gy-4 ">
                                     <div class="project position-relative ">
-                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
+                                        <img src="https://i.ibb.co/rQH70jJ/web7.png" class="img-project w-100" alt="">
                                         <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
-                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
-                                    <div class="project position-relative ">
-                                        <img src="assets/img/web.png" class="img-project w-100" alt="">
-                                        <div class="content position-absolute bottom-0 w-100 ">
-                                            <a href="assets/img/web.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="https://i.ibb.co/rQH70jJ/web7.png" class="plus"><i class="bi bi-plus-lg"></i></a>
                                             <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
                                         </div>
                                     </div>
@@ -779,7 +783,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.4/simple-lightbox.min.js"></script> -->
+
+    <script src="assets/vendor/lightbox/dist/simple-lightbox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
