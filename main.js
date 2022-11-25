@@ -16,6 +16,9 @@ $(".nav-link").on("click", function (e) {
 // lightbox
 
 var lightbox = new SimpleLightbox(".gallery a");
+var lightbox2 = new SimpleLightbox(".gallery2 a");
+var lightbox3 = new SimpleLightbox(".gallery3 a");
+var lightbox4 = new SimpleLightbox(".gallery4 a");
 
 // scroll top opacity
 

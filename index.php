@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="assets/vendor/lightbox/dist/simple-lightbox.min.css">
+    <link rel="stylesheet" href="assets/vendor/lightbox/dist/simple-lightbox.css">
 </head>
 
 <style>
@@ -659,9 +659,63 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">web</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">design</div>
-                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">dekstop</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="row justify-content-center gallery2">
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/0ZFRnt9/web8.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/0ZFRnt9/web8.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/93RwSv1/web9.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/93RwSv1/web9.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="row justify-content-center gallery3">
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/Ypjk7H2/web10.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/Ypjk7H2/web10.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/71vN1dn/web11.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/71vN1dn/web11.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <div class="row justify-content-center gallery4">
+                                <div class="col-lg-4 col-md-6 col-12 gy-4 ">
+                                    <div class="project position-relative ">
+                                        <img src="https://i.ibb.co/rvw62NM/New-Project-46-FE17-AD8.png" class="img-project w-100" alt="">
+                                        <div class="content position-absolute bottom-0 w-100 ">
+                                            <a href="https://i.ibb.co/rvw62NM/New-Project-46-FE17-AD8.png" class="plus"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="bookmark" class="bookmark "><i class="bi bi-bookmark"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -694,7 +748,7 @@
         <div class="container mt-5 ">
             <div class="row">
                 <div class="col-12 ">
-                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">About Me</h2>
+                    <h2 class="fw-600 my-3 all-title position-relative rounded-4">Biodata</h2>
                 </div>
             </div>
             <div class="row justify-content-center mt-4 reveal pb-4">
