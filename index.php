@@ -97,6 +97,10 @@
         font-size: 15px;
     }
 
+    .navbar-mobile {
+        background-color: #344D67 !important;
+    }
+
     .title-say {
         font-size: 45px;
     }
@@ -391,6 +395,10 @@
         font-size: 44px;
     }
 
+    .bi-chevron-right {
+        color: #03b0fd !important;
+    }
+
     @media (min-width: 576px) and (max-width: 767px) {
         .title-about {
             font-size: 30px !important;
@@ -451,6 +459,32 @@
         letter-spacing: 0.6px;
     }
 
+    .contact-card h3 {
+        position: relative;
+    }
+
+    /* .contact-card h3::before {
+        content: '';
+        position: absolute;
+        background: #03b0fd !important;
+        opacity: 50%;
+        z-index: 1;
+        width: 50%;
+        height: 4px;
+        top: 18px;
+        right: 0;
+        transform: translateX(50%);
+        left: 0;
+        bottom: 0;
+    } */
+
+
+    /* .icon-boder {
+        background-color: #264653 !important;
+        padding: 12px;
+        border-radius: 50%;
+    } */
+
     /* end contact  */
 
 
@@ -486,7 +520,7 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#biodata">Biodata</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -498,43 +532,33 @@
 
     <!-- mobile view  -->
 
-    <nav class="navbar navbar-dark bg-dark d-lg-none d-md-none d-block">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+    <nav class="navbar navbar-dark navbar-mobile d-lg-none d-md-none d-block">
+        <div class="container">
+            <a class="navbar-brand fw-600 ms-3" href="#">Yasz!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas offcanvas-end navbar-dark navbar-mobile" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                    <h5 class="offcanvas-title fw-600 text-white" id="offcanvasDarkNavbarLabel">Yasz!</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link " aria-current="page" href=""><i class="bi bi-house"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#projects"><i class="bi bi-box-seam"></i> Projects</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#biodata"><i class="bi bi-person"></i> Biodata</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="bi bi-person-video"></i> Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -744,7 +768,7 @@
         </div>
     </section>
 
-    <section class="projects mt-5" id="about">
+    <section class="projects mt-5" id="biodata">
         <div class="container mt-5 ">
             <div class="row">
                 <div class="col-12 ">
@@ -757,9 +781,42 @@
                         <img src="https://i.ibb.co/CvmTTWC/aj.jpg" class="rounded-circle mt-2 img-about" width="300px" alt="">
                     </div>
                 </div>
-                <div class="col-lg-8 mt-4 mt-lg-0 mt-md-3 overflow-hidden">
-                    <p class="mb-0 fw-300">Hi everyone!</p>
-                    <h1 class="title-about fw-600">Muhammad Ilyasa :3 </h1>
+                <div class="col-lg-8 col-md-6 col-12 mt-4 mt-lg-0 mt-md-3 overflow-hidden">
+                    <p class="mb-0 fw-300">Hi everyone &#128516;</p>
+                    <h1 class="title-about fw-600 mb-0">Muhammad Ilyasa :3 </h1>
+                    <div class="content">
+                        <h6 class="fw-300 mb-3">Hajimemashite Minasan!</h6>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="">
+                                    <p class="fw-400 mb-0">Name :</p>
+                                    <p class="fw-300"><i class="bi bi-chevron-right"></i> Muhammad Ilyasa</p>
+                                </div>
+                                <div class="py-lg-2 p-md-2 p-0">
+                                    <p class="fw-500 mb-0">Age :</p>
+                                    <p class="fw-300"><i class="bi bi-chevron-right"></i> 16 Years</p>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fw-500 mb-0">School :</p>
+                                    <p class="fw-300 mb-0"><i class="bi bi-chevron-right"></i> SMK Bina Mandiri Multidmedia</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-5 col-12">
+                                <div class="">
+                                    <p class="fw-400 mb-0">Birthday :</p>
+                                    <p class="fw-300"><i class="bi bi-chevron-right"></i> 12 September 2006</p>
+                                </div>
+                                <div class="py-lg-2 p-md-2 p-0">
+                                    <p class="fw-500 mb-0">City :</p>
+                                    <p class="fw-300"><i class="bi bi-chevron-right"></i> Bogor, Indonesian</p>
+                                </div>
+                                <div class="">
+                                    <p class="fw-500 mb-0">Hobby :</p>
+                                    <p class="fw-300 mb-0"><i class="bi bi-chevron-right"></i> ?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -776,7 +833,7 @@
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide">
                         <div class="contact-card">
-                            <h1><i class="bi bi-github"></i></h1>
+                            <h1><i class="bi bi-github icon-boder"></i></h1>
                             <div class="">
                                 <h3>GitHub</h3>
                                 <p class="opacity-75 fw-300">@iyasz</p>
@@ -785,7 +842,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="contact-card">
-                            <h1><i class="bi bi-facebook"></i></h1>
+                            <h1><i class="bi bi-facebook icon-boder"></i></h1>
                             <div class="">
                                 <h3>Facebook</h3>
                                 <p class="opacity-75 fw-300">@Mhmmad ILyasa</p>
@@ -794,7 +851,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="contact-card">
-                            <h1><i class="bi bi-linkedin"></i></h1>
+                            <h1><i class="bi bi-linkedin icon-boder"></i></h1>
                             <div class="">
                                 <h3>LinkedIn</h3>
                                 <p class="opacity-75 fw-300">@yaszavellia</p>
@@ -803,7 +860,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="contact-card">
-                            <h1><i class="bi bi-instagram"></i></h1>
+                            <h1><i class="bi bi-instagram icon-boder"></i></h1>
                             <div class="">
                                 <h3>Instagram</h3>
                                 <p class="opacity-75 fw-300">@yaszavellia</p>
@@ -812,7 +869,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="contact-card">
-                            <h1><i class="bi bi-telegram"></i></h1>
+                            <h1><i class="bi bi-telegram icon-boder"></i></h1>
                             <div class="">
                                 <h3>Telegram</h3>
                                 <p class="opacity-75 fw-300">@Yaszavellia</p>
