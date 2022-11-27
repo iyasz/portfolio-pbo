@@ -101,6 +101,27 @@
         background-color: #344D67 !important;
     }
 
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-mobile .nav-link {
+        font-size: 14px;
+    }
+
+    /* .navbar-collapse {
+        position: absolute;
+        background-color: red !important;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    } */
+
     .title-say {
         font-size: 45px;
     }
@@ -388,7 +409,6 @@
         left: 0;
         bottom: 0;
         height: 100%;
-        right: 12px;
     }
 
     .title-about {
@@ -532,7 +552,7 @@
 
     <!-- mobile view  -->
 
-    <nav class="navbar navbar-dark navbar-mobile d-lg-none d-md-none d-block">
+    <!-- <nav class="navbar navbar-dark navbar-mobile d-lg-none d-md-none d-block">
         <div class="container">
             <a class="navbar-brand fw-600 ms-3" href="#">Yasz!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -562,7 +582,35 @@
                 </div>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar navbar-mobile navbar-dark d-lg-none d-md-none d-block ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-600" href="#">Yasz!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-300 " aria-current="page" href=""><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-300" href="#projects"><i class="bi bi-box-seam"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-300" href="#biodata"><i class="bi bi-person"></i> Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-300" href="#contact"><i class="bi bi-person-video"></i> Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
+
+    <!-- end navbar  -->
 
     <section id="home">
         <div class="container mt-5 ">

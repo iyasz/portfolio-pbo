@@ -80,7 +80,7 @@ const text = document.getElementById("info-game");
 
 //img
 const closeImg = "https://i.ibb.co/zr547QB/New-Project-39-059-A32-A.png";
-const openImg = "https://i.ibb.co/7r7wnLd/New-Project-39-29-D7-CAA.png;";
+const openImg = "https://i.ibb.co/7r7wnLd/New-Project-39-29-D7-CAA.png";
 
 //sound
 // const openSound = new Audio("/audio/soundOpen.mp3");
@@ -136,5 +136,4 @@ function openMouth() {
 function closeMouth() {
   popcat.src = closeImg;
   // closeSound.play();
-  point.classList.toggle("move");
 }
